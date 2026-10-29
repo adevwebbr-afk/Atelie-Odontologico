@@ -1,157 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Odontológica | Estética & Cuidado Delicado</title>
-    
-    <!-- Google Fonts: Cormorant Garamond (Serif delicada) & Plus Jakarta Sans (Sansa fina) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ateliê Odontológico — odontologia estética e funcional com atendimento personalizado, tecnologia e naturalidade.">
+  <meta name="theme-color" content="#e7ddce">
+  <title>Ateliê Odontológico | Seu sorriso, com naturalidade</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="Ateliê Odontológico — página inicial">Ateliê <span>Odontológico</span></a>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container nav-container">
-            <a href="#" class="logo">Ateliê <span>Odontológico</span></a>
-            <ul class="nav-links">
-                <li><a href="#filosofia">Filosofia</a></li>
-                <li><a href="#tratamentos">Tratamentos</a></li>
-                <li><a href="#resultados">Resultados</a></li>
-            </ul>
-            <a href="#agendar" class="btn btn-outline">Agendar Consulta</a>
-        </div>
-    </header>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-navigation">
+        <span></span><span></span>
+      </button>
 
-    <!-- HERO CENTRALIZADO (EDITORIAL & SUAVE) -->
+      <nav class="nav-links" id="main-navigation" aria-label="Navegação principal">
+        <a href="#filosofia">Nossa essência</a>
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#resultados">Resultados</a>
+      </nav>
+
+      <a href="#agendar" class="btn btn-primary header-cta">Agendar avaliação</a>
+    </div>
+  </header>
+
+  <main>
     <section class="hero">
-        <div class="container">
-            <span class="hero-tag">Odontologia Estética & Funcional</span>
-            <h1>A arte de harmonizar o seu sorriso com delicadeza.</h1>
-            <p>Cuidados odontológicos personalizados com atendimento calmo, tecnologia indolor e foco na naturalidade dos seus traços.</p>
-            <a href="#agendar" class="btn btn-primary"><i data-lucide="arrow-down"></i> Solicitar Atendimento</a>
-
-            <!-- GALERIA DE FOTOS COM CURVAS SUAVES -->
-            <div class="hero-gallery">
-                <div class="gallery-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="Consultório Odontológico Nude">
-                </div>
-                <div class="gallery-img-wrapper center">
-                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Sorriso Delicado">
-                </div>
-                <div class="gallery-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="Detalhe do Atendimento">
-                </div>
-            </div>
+      <div class="container">
+        <div class="hero-copy">
+          <div class="hero-tag">Odontologia estética &amp; funcional</div>
+          <h1>A arte de harmonizar o seu sorriso com delicadeza.</h1>
+          <p>Cuidados odontológicos personalizados com atendimento acolhedor, tecnologia moderna e foco na naturalidade dos seus traços.</p>
+          <a href="#agendar" class="btn btn-primary">Solicitar atendimento <span aria-hidden="true">↗</span></a>
         </div>
+
+        <div class="hero-gallery" aria-label="Imagens do universo odontológico">
+          <div class="gallery-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=85" alt="Ambiente de consultório odontológico" fetchpriority="high">
+          </div>
+          <div class="gallery-img-wrapper center">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=85" alt="Profissional realizando atendimento odontológico">
+          </div>
+          <div class="gallery-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=900&q=85" alt="Atendimento em clínica odontológica">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- MANIFESTO / PILARES -->
-    <section id="filosofia" class="manifesto">
-        <div class="container manifesto-grid">
-            <div class="manifesto-item">
-                <h3>Atendimento Calmo</h3>
-                <p>Consultas sem pressa, em um ambiente acentuado por aromas e sons projetados para o seu bem-estar.</p>
-            </div>
-            <div class="manifesto-item">
-                <h3>Estética Sob Medida</h3>
-                <p>Lentes de porcelana e alinhadores planejados para preservar sua anatomia natural.</p>
-            </div>
-            <div class="manifesto-item">
-                <h3>Tecnologia Silenciosa</h3>
-                <p>Equipamentos modernos que garantem procedimentos rápidos, seguros e indolores.</p>
-            </div>
+    <section class="manifesto" id="filosofia">
+      <div class="container">
+        <div class="manifesto-intro">
+          <span class="eyebrow">Nossa forma de cuidar</span>
+          <h2>Um sorriso bonito começa com uma experiência tranquila.</h2>
         </div>
+
+        <div class="manifesto-grid">
+          <article class="manifesto-item">
+            <span class="item-index">01 /</span>
+            <h3>Atendimento calmo</h3>
+            <p>Consultas sem pressa, em um ambiente pensado para proporcionar conforto, tranquilidade e bem-estar.</p>
+          </article>
+
+          <article class="manifesto-item">
+            <span class="item-index">02 /</span>
+            <h3>Estética sob medida</h3>
+            <p>Lentes de porcelana e alinhadores planejados para valorizar e preservar suas características naturais.</p>
+          </article>
+
+          <article class="manifesto-item">
+            <span class="item-index">03 /</span>
+            <h3>Tecnologia cuidadosa</h3>
+            <p>Recursos modernos que auxiliam na realização de procedimentos com planejamento, precisão e segurança.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- TRATAMENTOS -->
-    <section id="tratamentos" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Procedimentos Exclusivos</h2>
-                <p style="color: var(--text-muted);">Técnicas avançadas para a saúde e estética do seu sorriso.</p>
-            </div>
-
-            <div class="services-list">
-                <div class="service-row">
-                    <h3>Lentes de Porcelana</h3>
-                    <p>Lâminas ultra-finas confeccionadas artesanalmente para alinhar e clarear com máxima naturalidade.</p>
-                    <a href="#agendar" class="btn btn-outline">Saber Mais</a>
-                </div>
-                <div class="service-row">
-                    <h3>Alinhadores Invisíveis</h3>
-                    <p>Placas transparentes e removíveis para alinhar seus dentes de forma discreta e sem fios metálicos.</p>
-                    <a href="#agendar" class="btn btn-outline">Saber Mais</a>
-                </div>
-                <div class="service-row">
-                    <h3>Clareamento Guiado</h3>
-                    <p>Procedimento com agentes suavizantes que iluminam a tonalidade dos dentes sem causar sensibilidade.</p>
-                    <a href="#agendar" class="btn btn-outline">Saber Mais</a>
-                </div>
-            </div>
+    <section class="services" id="tratamentos">
+      <div class="container">
+        <div class="section-header">
+          <span class="hero-tag">Cuidado personalizado</span>
+          <h2>Procedimentos que respeitam a sua essência.</h2>
+          <p>Técnicas voltadas à saúde e à estética do seu sorriso, com avaliação individualizada para cada necessidade.</p>
         </div>
+
+        <div class="services-list">
+          <article class="service-row">
+            <span class="service-index" aria-hidden="true">01</span>
+            <h3>Lentes de porcelana</h3>
+            <p>Lâminas planejadas para harmonizar formato, proporção e tonalidade do sorriso com naturalidade.</p>
+            <a href="#agendar" class="btn btn-outline">Saber mais <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-row">
+            <span class="service-index" aria-hidden="true">02</span>
+            <h3>Alinhadores invisíveis</h3>
+            <p>Placas transparentes e removíveis para auxiliar no alinhamento dos dentes de forma discreta.</p>
+            <a href="#agendar" class="btn btn-outline">Saber mais <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-row">
+            <span class="service-index" aria-hidden="true">03</span>
+            <h3>Clareamento guiado</h3>
+            <p>Tratamento supervisionado para iluminar a tonalidade dos dentes conforme a avaliação profissional.</p>
+            <a href="#agendar" class="btn btn-outline">Saber mais <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- ANTES E DEPOIS INTERATIVO -->
-    <section id="resultados" class="visualizer">
-        <div class="container">
-            <div class="section-header">
-                <h2>Transformações Discretas</h2>
-                <p style="color: var(--text-muted);">Arraste suavemente para observar o equilíbrio alcançado.</p>
-            </div>
-
-            <div class="ba-wrapper">
-                <div class="ba-img ba-after"></div>
-                <div class="ba-img ba-before" id="beforeImg"></div>
-                <input type="range" min="0" max="100" value="50" class="ba-slider" id="baSlider">
-            </div>
+    <section class="visualizer" id="resultados">
+      <div class="container">
+        <div class="section-header">
+          <span class="hero-tag">Beleza com naturalidade</span>
+          <h2>Os detalhes fazem a diferença.</h2>
+          <p>Use o controle para explorar a comparação entre as duas imagens ilustrativas.</p>
         </div>
+
+        <div class="ba-wrapper">
+          <img class="ba-img ba-after" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=85" alt="Imagem ilustrativa de atendimento odontológico">
+
+          <div class="ba-before-clip">
+            <img class="ba-img ba-before" id="beforeImg" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1400&q=85" alt="Imagem ilustrativa para comparação">
+          </div>
+
+          <div class="ba-divider" aria-hidden="true"></div>
+          <input type="range" class="ba-slider" id="baSlider" min="0" max="100" value="50" aria-label="Controle de comparação das imagens">
+          <span class="ba-label ba-label-before">Imagem 1</span>
+          <span class="ba-label ba-label-after">Imagem 2</span>
+        </div>
+
+        <p class="visualizer-note">Imagens ilustrativas. Os resultados variam de acordo com cada paciente e avaliação profissional.</p>
+      </div>
     </section>
 
-    <!-- FORMULÁRIO EXCLUSIVO NO FINAL DA PÁGINA (LINK ÂNCORA: #agendar) -->
-    <section id="agendar" class="booking-section">
-        <div class="container">
-            <div class="booking-card">
-                <h2>Inicie sua Jornada</h2>
-                <p>Preencha os dados abaixo para solicitar o seu horário exclusivo de avaliação.</p>
+    <section class="booking-section" id="agendar">
+      <div class="container">
+        <div class="booking-card">
+          <div class="booking-aside">
+            <span class="hero-tag">O primeiro passo</span>
+            <h2>Vamos conversar sobre o seu sorriso?</h2>
+            <p>Conte um pouco sobre o que procura. Ao enviar o formulário, você poderá continuar o atendimento pelo WhatsApp.</p>
+            <div class="booking-decoration" aria-hidden="true">A.</div>
+          </div>
 
-                <form id="leadForm">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label>Nome Completo</label>
-                            <input type="text" id="nome" class="form-control" placeholder="Seu nome" required>
-                        </div>
-                        <div class="form-group">
-                            <label>WhatsApp</label>
-                            <input type="tel" id="whatsapp" class="form-control" placeholder="(00) 00000-0000" required>
-                        </div>
-                        <div class="form-group full">
-                            <label>Tratamento Desejado</label>
-                            <select id="interesse" class="form-control">
-                                <option>Lentes de Porcelana</option>
-                                <option>Alinhadores Invisíveis</option>
-                                <option>Clareamento Guiado</option>
-                                <option>Avaliação Estética Geral</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;"><i data-lucide="send"></i> Enviar Solicitação no WhatsApp</button>
-                </form>
+          <form id="leadForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome" autocomplete="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="whatsapp">Seu WhatsApp</label>
+                <input type="tel" id="whatsapp" name="whatsapp" class="form-control" placeholder="(83) 99999-9999" autocomplete="tel" inputmode="tel" required>
+              </div>
+
+              <div class="form-group full">
+                <label for="interesse">Tratamento de interesse</label>
+                <select id="interesse" name="interesse" class="form-control" required>
+                  <option value="">Selecione uma opção</option>
+                  <option value="Lentes de porcelana">Lentes de porcelana</option>
+                  <option value="Alinhadores invisíveis">Alinhadores invisíveis</option>
+                  <option value="Clareamento guiado">Clareamento guiado</option>
+                  <option value="Avaliação geral">Avaliação geral</option>
+                  <option value="Ainda não sei">Ainda não sei / quero orientação</option>
+                </select>
+              </div>
             </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Continuar pelo WhatsApp <span aria-hidden="true">↗</span></button>
+            <p class="form-privacy">Seus dados serão usados para dar continuidade ao seu pedido de atendimento.</p>
+            <p class="form-error" id="formError" role="alert" hidden></p>
+          </form>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Ateliê Odontológico. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="container footer-content">
+      <a href="#" class="logo">Ateliê <span>Odontológico</span></a>
+      <p>Odontologia estética &amp; funcional</p>
+      <span>© <span id="currentYear">2026</span> Ateliê Odontológico. Todos os direitos reservados.</span>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
 </body>
 </html>
