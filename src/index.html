@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Odontológica OdontoPremium | Sorria com Confiança</title>
+    <!-- Google Fonts & Lucide Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="glow-blob glow-1"></div>
+    <div class="glow-blob glow-2"></div>
+    <div class="glow-blob glow-3"></div>
+
+    <!-- HEADER / NAV -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i data-lucide="sparkles"></i></div>
+                <span>Odonto<span class="gradient-text-accent">Premium</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#tratamentos">Tratamentos</a></li>
+                <li><a href="#antes-depois">Resultados</a></li>
+                <li><a href="#estimativa">Simulador</a></li>
+                <li><a href="#faq">Dúvidas</a></li>
+            </ul>
+            <a href="#agendar" class="btn btn-primary"><i data-lucide="calendar"></i> Agendar Avaliação</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="badge"><i data-lucide="shield-check"></i> Odontologia de Alta Performance</div>
+                <h1>Transforme seu Sorriso com <span class="gradient-text-accent">Tecnologia & Arte</span></h1>
+                <p>Recupere sua autoestima com tratamentos indolores, alinhadores invisíveis e estética dental avançada. Agende uma consulta técnica hoje mesmo.</p>
+                <div class="hero-actions">
+                    <a href="#agendar" class="btn btn-primary"><i data-lucide="arrow-right"></i> Marcar Consulta</a>
+                    <a href="https://wa.me/5500000000000" class="btn btn-whatsapp"><i data-lucide="message-square"></i> WhatsApp</a>
+                </div>
+                <div class="social-proof">
+                    <div class="avatar-group">
+                        <img src="https://i.pravatar.cc/100?img=33" alt="Paciente">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Paciente">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Paciente">
+                    </div>
+                    <div>
+                        <strong>+2.500 Sorrisos Renovados</strong>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Avaliação 4.9/5 ★★★★★ no Google</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HERO FORM -->
+            <div id="agendar" class="glass-card hero-form-card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Solicite um Contato</h3>
+                <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 0.9rem;">Preencha para receber nosso atendimento VIP.</p>
+                
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label>Nome Completo</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>WhatsApp / Telefone</label>
+                        <input type="tel" id="whatsapp" class="form-control" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tratamento de Interesse</label>
+                        <select id="interesse" class="form-control">
+                            <option>Alinhadores Invisíveis</option>
+                            <option>Lentes de Contato Dental</option>
+                            <option>Implantes de Carga Imediata</option>
+                            <option>Clareamento a Laser</option>
+                            <option>Avaliação Geral</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;"><i data-lucide="send"></i> Confirmar Agendamento</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats container">
+        <div class="glass-card stats-grid">
+            <div class="stat-card">
+                <h3>15+</h3>
+                <p style="color: var(--text-muted);">Anos de Experiência</p>
+            </div>
+            <div class="stat-card">
+                <h3>+2.5k</h3>
+                <p style="color: var(--text-muted);">Pacientes Atendidos</p>
+            </div>
+            <div class="stat-card">
+                <h3>99.4%</h3>
+                <p style="color: var(--text-muted);">Índice de Satisfação</p>
+            </div>
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p style="color: var(--text-muted);">Tratamento Sem Dor</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="tratamentos" class="services container">
+        <div class="section-title">
+            <span class="badge">Nossos Serviços</span>
+            <h2>Tratamentos Odontológicos Especializados</h2>
+            <p style="color: var(--text-muted);">Unimos tecnologia avançada e sensibilidade estética para resultados impecáveis.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="glass-card service-card">
+                <div class="service-icon"><i data-lucide="sparkle"></i></div>
+                <h3>Lentes de Contato</h3>
+                <p>Correção de cor, formato e alinhamento dos dentes com lâminas ultra-finas de porcelana pura.</p>
+            </div>
+            <div class="glass-card service-card">
+                <div class="service-icon"><i data-lucide="smile"></i></div>
+                <h3>Alinhadores Invisíveis</h3>
+                <p>Alinhamento ortodôntico rápido, confortável e imperceptível, sem o uso de braquetes metálicos.</p>
+            </div>
+            <div class="glass-card service-card">
+                <div class="service-icon"><i data-lucide="activity"></i></div>
+                <h3>Implantes Guiados</h3>
+                <p>Reconstrução do sorriso com cirurgia guiada por computador, sem cortes extensos e sem dor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEFORE / AFTER INTERACTIVE -->
+    <section id="antes-depois" class="visualizer container">
+        <div class="section-title">
+            <h2>Resultados Reais</h2>
+            <p style="color: var(--text-muted);">Arraste a barra para comparar o Antes e Depois de nossas transformações.</p>
+        </div>
+        <div class="ba-container">
+            <div class="ba-img ba-after"></div>
+            <div class="ba-img ba-before" id="beforeImg"></div>
+            <input type="range" min="0" max="100" value="50" class="ba-slider" id="baSlider">
+        </div>
+    </section>
+
+    <!-- CALCULATOR / ESTIMATOR -->
+    <section id="estimativa" class="calculator-sec container">
+        <div class="glass-card calc-wrapper">
+            <div>
+                <h3>Simulador de Investimento</h3>
+                <p style="color: var(--text-muted); margin-bottom: 24px;">Selecione o procedimento para visualizar a estimativa do plano de tratamento.</p>
+                <div class="calc-options">
+                    <button class="calc-option-btn active" data-price="R$ 1.800 - R$ 3.500" data-time="1 a 3 Sessões">
+                        <span>Clareamento Premium a Laser</span>
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                    <button class="calc-option-btn" data-price="R$ 6.500 - R$ 14.000" data-time="6 a 12 Meses">
+                        <span>Alinhadores Invisíveis</span>
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                    <button class="calc-option-btn" data-price="R$ 2.200 - R$ 4.000 (por elemento)" data-time="2 a 4 Sessões">
+                        <span>Lentes de Porcelana</span>
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="calc-result-box">
+                <span style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Estimativa Média</span>
+                <div class="calc-price" id="calcPrice">R$ 1.800 - R$ 3.500</div>
+                <p id="calcTime" style="margin-bottom: 24px;">Duração do Tratamento: 1 a 3 Sessões</p>
+                <a href="#agendar" class="btn btn-whatsapp" style="background: #fff; color: #000;"><i data-lucide="calendar"></i> Agendar Consulta Avaliativa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq container">
+        <div class="section-title">
+            <h2>Perguntas Frequentes</h2>
+            <p style="color: var(--text-muted);">Tire suas dúvidas técnicas de forma simples e rápida.</p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="glass-card faq-item active">
+                <div class="faq-header">
+                    <span>O tratamento com alinhadores invisíveis dói?</span>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+                <div class="faq-content">
+                    Não. É aplicada uma pressão leve e contínua nos dentes para promover a movimentação. O desconforto é mínimo e dura apenas nos primeiros dias de cada nova placa.
+                </div>
+            </div>
+
+            <div class="glass-card faq-item">
+                <div class="faq-header">
+                    <span>Quanto tempo dura o efeito do clareamento dental?</span>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+                <div class="faq-content">
+                    Em média de 1 a 3 anos, dependendo dos hábitos alimentares do paciente (consumo de café, vinho, etc.) e da higiene bucal diária.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <a href="#" class="logo" style="margin-bottom: 16px;">
+                    <div class="logo-icon"><i data-lucide="sparkles"></i></div>
+                    <span>Odonto<span class="gradient-text-accent">Premium</span></span>
+                </a>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Odontologia estética e funcional focada na saúde e no bem-estar do seu sorriso.</p>
+            </div>
+            <div>
+                <h4>Tratamentos</h4>
+                <p style="color: var(--text-muted); margin-top: 10px; font-size: 0.9rem;">Lentes de Contato<br>Alinhadores<br>Implantes</p>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <p style="color: var(--text-muted); margin-top: 10px; font-size: 0.9rem;">(00) 99999-9999<br>contato@odontopremium.com</p>
+            </div>
+            <div>
+                <h4>Endereço</h4>
+                <p style="color: var(--text-muted); margin-top: 10px; font-size: 0.9rem;">Av. Paulista, 1000 - Sala 402<br>São Paulo - SP</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Clínica OdontoPremium. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+     <script src="script.js"></script>
+</body>
+</html>
