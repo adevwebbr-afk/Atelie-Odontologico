@@ -1,7 +1,7 @@
-        // Initialize Icons
+  // Inicialização de Ícones Lucide
         lucide.createIcons();
 
-        // 1. Before/After Interactive Slider Logic
+        // Antes e Depois Interativo
         const baSlider = document.getElementById('baSlider');
         const beforeImg = document.getElementById('beforeImg');
         
@@ -11,34 +11,7 @@
             });
         }
 
-        // 2. Dynamic Treatment Estimator Logic
-        const calcBtns = document.querySelectorAll('.calc-option-btn');
-        const calcPrice = document.getElementById('calcPrice');
-        const calcTime = document.getElementById('calcTime');
-
-        calcBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                calcBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                calcPrice.textContent = btn.dataset.price;
-                calcTime.textContent = `Duração do Tratamento: ${btn.dataset.time}`;
-            });
-        });
-
-        // 3. FAQ Accordion Toggle
-        const faqItems = document.querySelectorAll('.faq-item');
-
-        faqItems.forEach(item => {
-            const header = item.querySelector('.faq-header');
-            header.addEventListener('click', () => {
-                const isOpen = item.classList.contains('active');
-                faqItems.forEach(i => i.classList.remove('active'));
-                if (!isOpen) item.classList.add('active');
-            });
-        });
-
-        // 4. Form Submission Router to WhatsApp
+        // Envio do Formulário para WhatsApp
         const leadForm = document.getElementById('leadForm');
         
         leadForm.addEventListener('submit', (e) => {
@@ -48,8 +21,8 @@
             const whatsapp = document.getElementById('whatsapp').value;
             const interesse = document.getElementById('interesse').value;
             
-            const phone = "5500000000000"; // Substitua pelo número real do WhatsApp da clínica
-            const message = `Olá! Meu nome é *${nome}* (${whatsapp}) e tenho interesse em agendar uma avaliação para *${interesse}*. Gostaria de saber os horários disponíveis.`;
+            const phone = "5500000000000"; // Substitua pelo número real
+            const message = `Olá! Meu nome é *${nome}* (${whatsapp}) e gostaria de agendar uma consulta para *${interesse}*.`;
             
             window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
         });
